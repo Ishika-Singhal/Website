@@ -102,9 +102,11 @@ nav img{
    transition: all 1s;
 }
 
-.icon{
-    display: none;
+.icons{
+    display:none;
 }
+
+
 @media screen and (max-width:700px){
     .textbox h1{
         font-size:20px;
@@ -121,12 +123,12 @@ nav img{
         right: -200px;
         text-align: left;
         z-index: 2;
-        transition: all 1s;
+        transition:1s;
     }
-    .icon{
+    .icons{
         display: block;
-        font-size: 30px;
-        margin: 5px 10px;
+        font-size: 40px;
+        margin: 10px 10px;
         cursor: pointer;
         font-weight: 900;
     }
