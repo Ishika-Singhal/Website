@@ -5,8 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-      hello! my name is ishika    
+
+    <!-- header -->
+      <section class="header">
+          <nav>
+              <a href="index.html"><img src="bgr.png" alt="logo"></a>
+              <div class="navlinks" id="nav-links">
+                    <span class="material-symbols-outlined icon" onclick="hideMenu()">
+                            close
+                            </span>
+
+                <ul>
+                      <li><a href="">HOME</a> </li>
+                      <li><a href="">ABOUT</a></li>
+                      <li><a href="">COURSE</a></li>
+                      <li><a href="">BLOG</a></li>
+                      <li><a href="">CONTACT</a></li>
+                  </ul>
+
+              </div>
+              <span class="material-symbols-outlined icon" onclick="showMenu()">
+                    menu
+                    </span>
+          </nav>
+
+          <div class="textbox">
+              <h1>World's Biggest University</h1>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam tempora nesciunt quasi omnis, dicta natus culpa animi recusandae hic, fugiat atque nobis tempore quas, delectus ad cumque adipisci accusantium ipsam.</p>
+              <a href="" class="headbtn">Visit Us To Know More</a>
+
+          </div>
+      </section> 
+
+
+<!-- courses -->
+      <section class="course">
+           <h1>Courses we offer</h1>
+      </section>
+      
+      <!-- javascript for toggle menu -->
+      <script>
+var navlinks=document.getElementById("nav-links");
+function showMenu(){
+    navlinks.style.right="0";
+}
+function hideMenu(){
+    navlinks.style.right="-200px";
+}
+
+      </script>
 </body>
 </html>
