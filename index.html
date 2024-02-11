@@ -10,16 +10,19 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
   </head>
   <body>
     <!-- header page-->
     <section class="header">
       <nav>
-        <a href="index.html"><img src="bgr.png" alt="logo"/></a>
+        <a href="index.html"><img src="images/bgr.png" alt="logo"/></a>
         <div class="navlinks" id="nav-links">
-          <span class="material-symbols-outlined icons" onclick="hideMenu()">
+          <!-- <span class="material-symbols-outlined icons" onclick="hideMenu()">
             close
-          </span>
+          </span> -->
+          <i class="bi bi-x-lg" onclick="hideMenu()"></i>
 
           <ul>
             <li><a href="">HOME</a></li>
@@ -29,13 +32,15 @@
             <li><a href="">CONTACT</a></li>
           </ul>
         </div>
-        <span class="material-symbols-outlined icons" onclick="showMenu()">
+        <!-- <span class="material-symbols-outlined icons" onclick="hideMenu()">
           menu
-        </span>
+        </span> -->
+        <i class="bi bi-list" onclick="showMenu()"></i>
       </nav>
 
       <div class="textbox">
         <h1>World's Biggest University</h1>
+        
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
           tempora nesciunt quasi omnis, dicta natus culpa animi recusandae hic,
@@ -49,7 +54,125 @@
     <!-- courses page-->
     <section class="course">
       <h1>Courses we offer</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, magnam!</p>
+      <div class="row">
+        <div class="coursesdiff">
+          <h3>Intermediate</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore neque eligendi impedit vitae delectus esse consequuntur harum labore voluptas!</p>
+        </div>
+        <div class="coursesdiff">
+          <h3>Degree</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore neque eligendi impedit vitae delectus esse consequuntur harum labore voluptas!</p>
+        </div>
+        <div class="coursesdiff">
+          <h3>Graduation</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore neque eligendi impedit vitae delectus esse consequuntur harum labore voluptas!</p>
+        </div>
+      </div>
     </section>
+
+    <!-- cllg campuses -->
+    <section class="campus">
+       <h1>Our College Campus</h1>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, id!</p>
+
+       <div class="row">
+         <div class="campusdiff">
+           <img src="images/campus1.jpg" alt="london">
+           <div class="layer">
+             <h3>LONDON</h3>
+           </div>
+         </div>
+         <div class="campusdiff">
+           <img src="images/campus2.jpg" alt="newyork">
+           <div class="layer">
+            <h3>NEW YORK</h3>
+          </div>
+         </div>
+         <div class="campusdiff">
+           <img src="images/campus3.jpg" alt="washington">
+           <div class="layer">
+            <h3>WASHINGTON</h3>
+          </div>
+         </div>
+       </div>
+    </section>
+
+    <!-- Facilities -->
+    <section class="facility">
+      <h1>Our Facilities</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, nam!</p>
+
+      <div class="row">
+        <div class="facilitycol">
+          <img src="images/library.jpg" alt="library">
+          <h3>World Class Library</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quia.</p>
+        </div>
+        <div class="facilitycol">
+          <img src="images/basketball.jpg" alt="basketball">
+          <h3>Largest Play Ground</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quia.</p>
+        </div>
+        <div class="facilitycol">
+          <img src="images/canteen.jpg" alt="canteen">
+          <h3>Tasty and Healthy Food</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quia.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- testimonials -->
+    <section class="testimonial">
+      <h1>What Our Student Says</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, alias.</p>
+
+      <div class="row">
+        <div class="testicol">
+        <img src="images/student3.jpg" alt="stu1">
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aspernatur sint dolorem voluptatem ab incidunt enim expedita, officiis tenetur omnis.
+          </p>
+            <h3>
+               Sahil Gupta
+            </h3>
+        </div>
+    </div>
+      <div class="testicol">
+        <img src="images/student2.jpg" alt="stu2">
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aspernatur sint dolorem voluptatem ab incidunt enim expedita, officiis tenetur omnis.
+          </p>
+            <h3>
+               Priyanka Rajput
+            </h3>
+        </div>
+    </div>
+    </section>
+
+    <!-- contact  -->
+    <section class="contact">
+      <h1>Contact Us For Various Online Course </h1>
+      <a href="" class="headbtn">Contact Us</a>
+    </section>
+
+
+    <!-- footer -->
+  <section class="footer">
+    <h3>About Us</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, autem? Veniam eum et deleniti dolores provident consectetur ipsa perspiciatis accusamus voluptatem commodi temporibus tenetur, blanditiis sint molestias nam architecto qui!</p>
+    <div class="icons">
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-twitter"></i>
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-linkedin"></i>
+    </div>
+    <p>Made with by <i class="bi bi-suit-heart"></i> Ishika Singhal </p>
+
+  </section>
 
     <!-- javascript for toggle menu -->
     <script>
